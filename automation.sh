@@ -19,9 +19,7 @@ fi
 myname=aniruddha
 timestamp=$(date '+%d%m%Y-%H%M%S')
 s3_bucket=upgrad-aniruddha123
+
 sudo tar -cvf /tmp/${myname}-httpd-logs-${timestamp}.tar /var/log/apache2/*.log
 #sudo gzip -v /tmp/aniruddha-httpd-logs-${timestamp}.tar
 aws s3 cp /tmp/${myname}-httpd-logs-${timestamp}.tar s3://${s3_bucket}/${myname}-httpd-logs-${timestamp}.tar
-#
-#
-#
