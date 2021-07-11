@@ -18,3 +18,7 @@
 => Next, another command to copy that tar file to the s3_bucket. 
 
 => Hope, it makes sense and readable, thanks. 
+
+=> As part of task 3 of the assignment, script will now create an inventory.html if not present and append with some required information whenever it runs
+
+=> Also, a cron job has been set within the script to create a file under /etc/cron.d/ directory and scheduled to run daily by root user. 
